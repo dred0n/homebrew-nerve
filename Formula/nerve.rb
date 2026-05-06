@@ -4,6 +4,8 @@ class Nerve < Formula
   version "0.10.7"
   license "MIT"
 
+  depends_on "dred0n/shadom/shadom"
+
   on_macos do
     on_arm do
       url "https://github.com/dred0n/nerve-releases/releases/download/v0.10.7/nerve-macos-aarch64.tar.gz"
@@ -17,5 +19,6 @@ class Nerve < Formula
 
   test do
     assert_match "nerve", shell_output("#{bin}/nerve --version")
+    assert_match "shadom", shell_output("#{Formula["dred0n/shadom/shadom"].opt_bin}/shadom --version")
   end
 end
