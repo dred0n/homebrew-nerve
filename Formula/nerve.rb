@@ -10,7 +10,7 @@ class Nerve < Formula
   on_macos do
     on_arm do
       url "https://github.com/dred0n/nerve-releases/releases/download/v0.10.28/nerve-macos-aarch64.tar.gz"
-      sha256 "da3e8919b5169760a0a87cbd739fb6930f774e6e80b5b993afdc83e8a741281c"
+      sha256 "64bc6a25efc913344fab01fbb9c6c24413e02e725b0077edf7735df298359770"
 
       def install
         bin.install "nerve-macos-aarch64" => "nerve"
