@@ -1,7 +1,7 @@
 class Nerve < Formula
   desc "AI coding agent powered by Claude and ChatGPT"
   homepage "https://github.com/dred0n/nerve"
-  version "0.10.29"
+  version "0.10.30"
   license "MIT"
 
   depends_on "uv"
@@ -9,8 +9,8 @@ class Nerve < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/dred0n/nerve-releases/releases/download/v0.10.29/nerve-macos-aarch64.tar.gz"
-      sha256 "25c1f7aa60bdfed794a2bb2726e34c79c2a9e4831f4fad9c281822461d76dc2c"
+      url "https://github.com/dred0n/nerve-releases/releases/download/v0.10.30/nerve-macos-aarch64.tar.gz"
+      sha256 "3d74fcaf34040753431f92e1a6b95e4fc69e5043c3c9c4a0bc60688c5759e2c3"
 
       def install
         bin.install "nerve-macos-aarch64" => "nerve"
